@@ -1,0 +1,11 @@
+Newest 10
+SELECT players, time_stamp FROM (SELECT id, players, SUBSTRING(time_stamp, 12) as time_stamp FROM {server} ORDER BY id DESC LIMIT 10) q1 ORDER BY id;
+
+Max players every hour
+SELECT MAX(players), SUBSTRING(time_stamp, 1, 13) as time_stamp FROM {server} GROUP BY SUBSTRING(time_stamp, 1, 13)
+
+Max players week
+SELECT MAX(players), SUBSTRING(time_stamp, 1, 10) as time_stamp FROM {server} GROUP BY SUBSTRING(time_stamp, 1, 10)
+
+Max players months
+SELECT MAX(players), SUBSTRING(time_stamp, 1, 7) as time_stamp FROM plarp GROUP BY SUBSTRING(time_stamp, 1, 7)

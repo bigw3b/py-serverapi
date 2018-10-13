@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<servers>
+	<server>
+		<name_short>PLA-RP</name_short>
+		<name_long>Project Los Angeles Roleplay</name_long>
+		<ip>plarp.eu</ip>
+		<port>7777</port>
+		<web>http://plarp.eu/</web>
+		<sql>plarp</sql>
+	</server>
+	<server>
+		<name_short>SFB-RP</name_short>
+		<name_long>San Francisco Bay Roleplay</name_long>
+		<ip>samp.sfb-rp.cz</ip>
+		<port>7777</port>
+		<web>https://sfb-rp.cz/main/</web>
+		<sql>sfbrp</sql>
+	</server>
+</servers>
